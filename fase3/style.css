@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer{
+    padding: 1rem;
+    text-align: center;
+    background: #000000;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  #menu ul li {
+      background-color:teal;
+    
+  }
+  
+  #menu ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  
+  }
+  
+  #menu ul a {
+  display:block;
+  color:rgb(255, 255, 255);
+  text-decoration:none;
+  font-weight:400;
+  font-size:15px;
+  padding:10px;
+  font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+  
+  #menu ul li {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+  width:20%; 
+  text-align: center;
+  
+  }
+  
+  #menu ul li:hover {
+  background:#5b78a7;
+  }
+  
+  #menu ul ul {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:70px;
+  padding:0;
+  
+  }
+  
+  #menu ul ul li {
+  
+  width: 200px;
+  }
+  
+  /* #menu ul ul a {
+  line-height:120%;
+  padding:10px 15px;
+  } */
+  
+  #menu ul li:hover > ul {
+  display:block;
+  
+  }
+      header{
+          background: gray;
+          height: 50px;
+          left:0;
+          top: 0;
+          right: 0;
+          position: absolute;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      body{
+          margin-top: 50px;
+          width: 100%;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      #header{
+        display: flex;
+        background: rgb(51, 51, 53);
+        padding: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+      #header h2{
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .textDescriptivo{
+          padding-left: 2rem;
+          line-height: 130%;
+          text-align: justify;
+          display: flex;
+     
+
+      }
+      .ulDescriptivo{
+        padding-left: 4rem;
+        line-height: 130%;
+  
+      }
+      .imagesDescriptiva{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+      .imagesDescriptiva img{
+          width: 90%;
+      }
+      .divFlex{
+          display: flex;
+          align-items: center;
+      }
+      .textCenter{
+          text-align: center;
+      }
+      .tableStyle{
+        border-collapse: collapse;
+        width: 100%;
+      }
+      .tableStyle tr td{
+       border: 1px solid;
+    
+      }
+      #tableAtributos{
+        border-spacing:0px;
+        border-collapse:collapse;
+        font-size:16px;
+        text-align: center;
+      }
+
+      #tableAtributos thead tr th{
+        background: #000000;
+        color: white;
+        padding: 2rem;
+      }
+      #tableAtributos tbody tr td{
+
+        padding: 0.5rem;
+      }

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+   <strong>  APRENDIENDO HTML</strong>
+ 
+  
+</header>
+<body>
+    <div>
+        <nav id="menu" >
+            <ul >
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="">Temas</a>
+                <ul>
+                  <li><a href="tema1_etiquetas.html">Etiquetas Basicas HTML</a></li>
+                  <li><a href="tema2_atributos.html">Atributos y Valores</a></li>
+                </ul>  
+              </li>
+              <li><a href="">Recursos Multimedios</a>
+                <ul>
+                  <li><a href="">Etiquetas HTML</a></li>
+                  <li><a href="">Atributos</a></li>
+                </ul>  
+              </li>
+              <li><a href="">Aprendizaje</a>
+                <ul>
+                  <li><a href="">Actividad 1</a></li>
+                  <li><a href="">Actividad 2</a></li>
+                </ul>  
+              </li>
+              <li><a href="">Acerca de</a>
+                <ul>
+                  <li><a href="">Autor</a></li>
+                </ul>  
+              </li>
+            </ul>
+          </nav>
+    </div>
+    <section id="header">
+        <div>
+            <h2>Atributos de Etiquetas HTML</h2>
+
+        </div>
+    </section>
+    <section style="padding: 2rem; display: flex;">
+      
+      <div class="divFlex" style="width: 50%;">
+        <div >
+            <h2>Que son los Atributos HTML</h2>
+            <hr>
+            <br>
+            <p class="textDescriptivo">
+                Los atributos de HTML son palabras especiales utilizadas dentro de la etiqueta de apertura, para controlar el comportamiento del elemento. Los atributos de HTML son un modificador de un tipo de elemento de HTML
+            </p>
+        </div>
+
+        <br>
+        
+      </div>
+      <div style="width: 50%;">
+        <div class="imagesDescriptiva">
+            <img src="images/etiquetas-y-atributos-hmtl.webp" alt="" srcset="" >
+        </div>
+      </div>
+    </section>
+    <hr>
+    <article style="display: flex; padding: 2rem;">
+      <div style="width: 50%;">
+        <div class="imagesDescriptiva">
+            <img src="images/Anatom-a-de-Etiqueta.png" alt="" srcset="">
+        </div>
+      </div>
+      <div class="divFlex" style="width: 50%;">
+        <div>
+            <div>
+                <h2>Tipos de Atributos</h2>
+                <hr>
+                <br>
+                <p class="textDescriptivo">
+                    Existen diferentes tipos de atributos para las etiquetas. Algunos son de ámbito global, mientras que otros son más específicos y solo son válidos para algunas etiquetas HTML. En general podemos ordenarlos de la siguiente manera:
+                 </p>
+                 <br>
+                 <p class="textDescriptivo">
+                     <ul class="ulDescriptivo">
+                         <li>
+                            <strong>Atributos requeridos:</strong> son atributos necesarios para la etiqueta HTML. Sin ellos, la etiqueta por si sola no tendrá el comportamiento esperado. <br>
+                         </li>
+                         <li>
+                            <strong>Atributos opcionales:</strong> en este caso, estos atributos son utilizados para modificar la funcionalidad por defecto de la etiqueta HTML. <br>
+                         </li>
+                         <li>
+                            <strong>Atributos globales:</strong> son atributos de ámbito general que pueden ser utilizados en casi cualquier etiqueta HTML.<br>
+                         </li>
+                     </ul>
+                   
+    
+                </p>
+            </div>
+           
+
+        </div>
+ 
+     
+      </div>
+    </article>
+    <hr>  
+
+    <section>
+        <br>
+        <div>
+            <h2 class="textCenter">Atributos</h2>
+        </div>
+        <div style="padding: 2rem;">
+            <table border="1" cellpadding="15" id="tableAtributos" cellspacing="3" width="100%">
+                <thead>
+                    <tr>
+                        <th>Apertura</th>
+                        <th >Acción</th>
+                        <th>Atributos</th>
+                        <th>Cierre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>&lt; !</td>
+                <td>Comentario.</td>
+                <td>Ninguno</td>
+                <td>--&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;A&gt;</td>
+                <td>Hipervínculo.</td>
+                <td>HREF, NAME, REL, REV, TITLE</td>
+                <td>&lt;/A&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;ADDRESS&gt;</td>
+                <td>Formato para dirección del autor.</td>
+                <td>Ninguno</td>
+                <td>&lt;/ADDRESS&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;BASE&gt;</td>
+                <td>Url del autor; contexto del documento.</td>
+                <td>HREF</td>
+                <td>&lt;/BASE&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;BASEFONT SIZE&gt;</td>
+                <td>Tamaño de la fuente base.</td>
+                <td>Ninguno</td>
+                <td>NO</td>
+                </tr>
+                <tr>
+                <td>&lt;BGSOUND&gt;</td>
+                <td>Sonido de fondo.</td>
+                <td>SRC, LOOP.</td>
+                <td>NO - Internet Explorer</td>
+                </tr>
+                <tr>
+                <td>&lt;BIG&gt;</td>
+                <td>Aumenta el tamaño.</td>
+                <td>Ninguno</td>
+                <td>&lt;/BIG&gt;</td>
+                </tr>
+                <tr>
+                <td>&lt;BLINK&gt;</td>
+                <td>Hace parpadear el texto.</td>
+                <td>Ninguno</td>
+                <td>&lt;/BLINK&gt; - Netscape</td>
+                </tr>
+                <tr>
+                <td>&lt;BLOCKQUOTE&gt;</td>
+                <td>Da formato con sangría a un párrafo</td>
+                <td>Ninguno</td>
+                <td>&lt;/BLOCKQUOTE&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;BODY&gt;</td>
+                <td  >Cuerpo del documento.</td>
+                <td  >BGCOLOR, BACKGROUND, TEXT, LINK, VLINK, ALINK</td>
+                <td  >&lt;/BODY&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;BR&gt;</td>
+                <td  >Retorno de línea.</td>
+                <td  >CLEAR: Se utiliza en combinación con ALIGN de IMAGE.</td>
+                <td  >NO</td>
+                </tr>
+                <tr>
+                <td  >&lt;CAPTION&gt;</td>
+                <td  >Posición de la leyenda en una tabla.</td>
+                <td  >ALIGN: TOP/BOTTOM. Internet Explorer: LEFT, RIGHT, CENTER</td>
+                <td  >&lt;/CAPTION&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;CENTER&gt;</td>
+                <td  >Centrar.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/CENTER&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;CITE&gt;</td>
+                <td  >Formato para citas en itálicas.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/CITE&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;CODE&gt;</td>
+                <td  >Formato en tipo código.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/CODE&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;DD&gt;</td>
+                <td  >Definiciones marcadas, para Lista de Definiciones &lt;DL&gt;.</td>
+                <td  >Ninguno</td>
+                <td  >NO</td>
+                </tr>
+                <tr>
+                <td  >&lt;DFN&lt;</td>
+                <td  >Formato en itálica.</td>
+                <td  >Internet Explorer</td>
+                <td  >&lt;/DFN&lt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;DIR&gt;</td>
+                <td  >Lista de directorio, con elementos marcados con &lt;LI&gt;.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/DIR&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;DL&gt;</td>
+                <td  >Lista de Definiciones, con términos marcados con &lt;DT&gt; y definiciones marcadas con &lt;DD&gt;.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/DL&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;DT&gt;</td>
+                <td  >Términos marcados, para Lista de Definiciones &lt;DL&gt;.</td>
+                <td  >Ninguno</td>
+                <td  >NO</td>
+                </tr>
+                <tr>
+                <td  >&lt;EM&gt;</td>
+                <td  >Formato enfatizado en itálica.</td>
+                <td  >Ninguno</td>
+                <td  >&lt;/EM&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;EMBED&gt;</td>
+                <td  >Sonido de Fondo.</td>
+                <td  >SRC, WIDTH, HEIGHT, AUTOSTART, LOOP.</td>
+                <td  >NO - Netscape</td>
+                </tr>
+                <tr>
+                <td  >&lt;FONT&gt;</td>
+                <td  >Definición de la fuente.</td>
+                <td  >SIZE, COLOR. Internet Explorer: FACE.</td>
+                <td  >&lt;/FONT&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;FORM&gt;</td>
+                <td  >Para ingreso de datos del usuario en un formulario.</td>
+                <td  >ACTION, METHOD</td>
+                <td  >&lt;/FORM&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;H1 ...H6&gt;</td>
+                <td  >Tamaño de letras del 1 al 6.</td>
+                <td  >HTML 3.0: LEFT, CENTER, RIGHT</td>
+                <td  >&lt;/H1 .../H6&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;HEAD&gt;</td>
+                <td  >Encabezamiento del documento.</td>
+                <td  >BASE, TITLE, ISINDEX, NEXTID, META</td>
+                <td  >&lt;/HEAD&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;HR&gt;</td>
+                <td  >Línea horizontal.</td>
+                <td  >NOSHADE, SIZE, WIDTH, ALIGN. Internet Explorer: COLOR</td>
+                <td  >NO</td>
+                </tr>
+                <tr>
+                <td  >&lt;HTML&gt;</td>
+                <td  >Al principio y al fin de todo documento.</td>
+                <td  >HEAD, BODY</td>
+                <td  >&lt;/HTML&gt;</td>
+                </tr>
+                <tr>
+                <td  >&lt;I&gt;</td>
+                <td  >Itálica (Cursiva).</td>
+                <td  >Ninguno</td>
+                <td >&lt;/I&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;IMG&gt;</td>
+                <td >Cargar imágenes.</td>
+                <td >ALIGN, SRC, ALT, ISMAP, WIDTH, HEIGHT, VSPACE, HSPACE</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;INPUT&gt;</td>
+                <td >Define un objeto de ingreso en un formulario.</td>
+                <td >TYPE, NAME, VALUE, SIZE, MAXLENGHT, ALIGN, SRC, CHECKED</td>
+                <td >&lt;/INPUT&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;ISINDEX&gt;</td>
+                <td >Indica que existe un index en el server para el documento.</td>
+                <td >Netscape: PROMPT</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;ISMAP&gt;</td>
+                <td >Activa la selección de imágenes para el usuario.</td>
+                <td >Ninguno</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;KBD&gt;</td>
+                <td >Formato monoespaciado.</td>
+                <td >Ninguno</td>
+                <td >&lt;/KBD&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;LI&gt;</td>
+                <td >Ítem de lista.</td>
+                <td >Netscape: VALUE, TYPE</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;LISTING&gt;</td>
+                <td >Listados</td>
+                <td >Ninguno. Obsoleto.</td>
+                <td >&lt;/LISTING&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;LIT&gt;</td>
+                <td >Literal. Como PRE, pero usa letra proporcional.</td>
+                <td >Ninguno</td>
+                <td >&lt;/LIT&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;MARQUEE&gt;</td>
+                <td >Marquesina.</td>
+                <td >ALIGN, BEHAVIOR, BGCOLOR, DIRECTION, HEIGHT, WIDTH, HSPACE, VSPACE, LOOP, SCROLLAMOUNT, SCROLLDELAY.</td>
+                <td >&lt;/MARQUEE&gt; - Internet Explorer</td>
+                </tr>
+                <tr>
+                <td >&lt;MENU&gt;</td>
+                <td >Lista menú.</td>
+                <td >Ninguno</td>
+                <td >&lt;/MENU&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;META&gt;</td>
+                <td >Metainformación ubicada en HEAD.</td>
+                <td >EQUIV, CONTENT, NAME</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;NEXTID&gt;</td>
+                <td >Es un parámetro que identifica al documento.</td>
+                <td >NO</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;NOBR&gt;</td>
+                <td >Elimina los saltos de líneas.</td>
+                <td >Ninguno</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;OL&gt;</td>
+                <td >Lista ordenada, con elementos marcados con &lt;LI&gt;.</td>
+                <td >TYPE, START, VALUE.</td>
+                <td >&lt;/OL&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;OPTION&gt;</td>
+                <td >Opción de selección dentro de un formulario.</td>
+                <td >VALUE, SELECTED VALUE</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;P&gt;</td>
+                <td >Retorno de línea, con un espacio.</td>
+                <td >Ninguno</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;P ALIGN&gt;</td>
+                <td >Alineación de texto.</td>
+                <td >LEFT, CENTER, RIGHT</td>
+                <td >&lt;/P&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;PLAINTEXT&gt;</td>
+                <td >Pasaje de texto plano.</td>
+                <td >Ninguno. Obsoleto.</td>
+                <td >&lt;/PLAINTEXT&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;PRE&gt;</td>
+                <td >Visualiza el texto en su formato original.</td>
+                <td >WIDTH</td>
+                <td >&lt;/PRE&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;S&gt;</td>
+                <td >Texto tachado.</td>
+                <td >Ninguno</td>
+                <td >&lt;/S&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;SAMP&gt;</td>
+                <td >Formato tipo ejemplo.</td>
+                <td >Ninguno</td>
+                <td >&lt;/SAMP&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;SELECT&gt;</td>
+                <td >Para selección de opciones dentro de un formulario.</td>
+                <td >NAME, SIZE, MULTIPLE</td>
+                <td >&lt;/SELECT&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;SMALL&gt;</td>
+                <td >Disminuye el tamaño.</td>
+                <td >Ninguno</td>
+                <td >&lt;/SMALL&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;STRONG&gt;</td>
+                <td >Formato enfatizado más fuerte que &lt;EM&gt;.</td>
+                <td >Ninguno</td>
+                <td >&lt;/STRONG&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;SUB&gt;</td>
+                <td >Subíndice.</td>
+                <td >Ninguno</td>
+                <td >&lt;/SUB&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;SUP&gt;</td>
+                <td >Superíndice.</td>
+                <td >Ninguno</td>
+                <td >&lt;/SUP&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TABLE&gt;</td>
+                <td >Tabla.</td>
+                <td >BORDER, CELLPADDING, CELLSPACING, HEIGTH, WIDTH. Internet Explorer: COLOR</td>
+                <td >&lt;/TABLE&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TD&gt;</td>
+                <td >Celdas de una fila en una tabla, dentro de &lt;TR&gt;.</td>
+                <td >ALIGN, VALIGN, NOWRAP, COLSPAN, ROWSPAN, HEIGTH, WIDTH</td>
+                <td >&lt;/TD&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TEXTAREA&gt;</td>
+                <td >Área para ingreso de texto dentro de un formulario.</td>
+                <td >NAME, ROWS, COLS.</td>
+                <td >&lt;/TEXTAREA&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TH&gt;</td>
+                <td >Título de Tabla.</td>
+                <td >ROWSPAN, COLSPAN, ALIGN, VALIGN, NOWRAP, HEIGHT, WIDTH</td>
+                <td >&lt;/TH&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TITLE&gt;</td>
+                <td >Título dentro de HEAD.</td>
+                <td >Ninguno</td>
+                <td >&lt;/TITLE&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TR&gt;</td>
+                <td >Fila de una Tabla.</td>
+                <td >ALIGN, VALIGN</td>
+                <td >&lt;/TR&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;TT&gt;</td>
+                <td >Formato tipo máquina.</td>
+                <td >Ninguno</td>
+                <td >&lt;/TT&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;UL&gt;</td>
+                <td >Lista no ordenada, con elementos marcados con &lt;LI&gt; .</td>
+                <td >COMPACT, TYPE</td>
+                <td >&lt;/UL&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;VAR&gt;</td>
+                <td >Formato tipo variable.</td>
+                <td >Ninguno</td>
+                <td >&lt;/VAR&gt;</td>
+                </tr>
+                <tr>
+                <td >&lt;WBR&gt;</td>
+                <td >Se usa con NOBR para una sección que deba ser separada.</td>
+                <td >Ninguno</td>
+                <td >NO</td>
+                </tr>
+                <tr>
+                <td >&lt;XMP&gt;</td>
+                <td >Similar a PRE.</td>
+                <td >Ninguno</td>
+                <td >&lt;/XMP&gt;</td>
+                </tr>
+                </tbody>
+                </table>
+        </div>
+        <div style="padding: 2rem;">
+            <p>Tomado de <a href="https://sites.google.com/site/dwebhtml/home/cuadro-etiquetas-y-atributos">https://sites.google.com/site/dwebhtml/home/cuadro-etiquetas-y-atributos</a></p>
+        </div>
+    </section>
+
+   
+</body>
+<footer>
+  Desarrollado por: Ramiro Aldana España - Email: raldanae@unadvirtual.edu.co - Skype: live:ramiroaldana15
+</footer>
+</html>
