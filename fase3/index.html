@@ -5,105 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<style>
-*{
-  margin: 0;
-  padding: 0;
-}
-
-footer{
-  padding: 1rem;
-  text-align: center;
-  background: #000000;
-  font-weight: bold;
-  color: white;
-}
-
-
-#menu ul li {
-    background-color:teal;
-  
-}
-
-#menu ul {
-list-style:none;
-margin:0;
-padding:0;
-
-}
-
-#menu ul a {
-display:block;
-color:rgb(255, 255, 255);
-text-decoration:none;
-font-weight:400;
-font-size:15px;
-padding:10px;
-font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-#menu ul li {
-position:relative;
-float:left;
-margin:0;
-padding:0;
-width:20%; 
-text-align: center;
-
-}
-
-#menu ul li:hover {
-background:#5b78a7;
-}
-
-#menu ul ul {
-display:none;
-position:absolute;
-top:100%;
-left:70px;
-padding:0;
-
-}
-
-#menu ul ul li {
-
-width: 200px;
-}
-
-/* #menu ul ul a {
-line-height:120%;
-padding:10px 15px;
-} */
-
-#menu ul li:hover > ul {
-display:block;
-
-}
-    header{
-        background: gray;
-        height: 50px;
-        left:0;
-        top: 0;
-        right: 0;
-        position: absolute;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    body{
-        margin-top: 50px;
-        width: 100%;
-     
-    }
-</style>
 <header>
    <strong>  APRENDIENDO HTML</strong>
  
@@ -122,8 +26,8 @@ display:block;
               </li>
               <li><a href="">Recursos Multimedios</a>
                 <ul>
-                  <li><a href="">Etiquetas HTML</a></li>
-                  <li><a href="">Atributos</a></li>
+                  <li><a href="recurso1_etiquetas.html">Etiquetas HTML</a></li>
+                  <li><a href="recursos2_atributos.html">Atributos</a></li>
                 </ul>  
               </li>
               <li><a href="">Aprendizaje</a>
@@ -134,26 +38,36 @@ display:block;
               </li>
               <li><a href="">Acerca de</a>
                 <ul>
-                  <li><a href="">Autor</a></li>
+                  <li><a href="autor.html">Autor</a></li>
                 </ul>  
               </li>
             </ul>
           </nav>
     </div>
+    <section id="header">
+      <div>
+          <h2>HTML ETIQUETAS Y ATRIBUTOS</h2>
 
+      </div>
+  </section>
     <section style="padding: 2rem; display: flex;">
       <div style="width: 50%;">
-        <h2>Proposito del sitio</h2>
+        <h2 class="textCenter">Proposito del sitio</h2>
+        <div class="textCenter">
+          <img src="images/logo_html.png" alt="" srcset="" style="width: 10%;">
+      </div>
         <p>
           Con el propósito de realiza de una forma interactiva, de facil acceso y que permita plasmar los conceptos importantes, asi como etiquetas y demas referentes a HTML, se ha creado este espacio web,
           aqui iniciaras en el maravilloso mundo del desarrollo web, aprendiendo desde cero el lenguaje de etiquetado HTML.
         </p>
       </div>
       <div style="width: 50%;">
-          <img src="images/logo_html.png" alt="" srcset="" style="width: 20%;">
+        <aside class="textCenter">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=777010372459652" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </aside>
       </div>
     </section>
-    
+    <hr>
     <article style="display: flex; padding: 2rem;">
       <div style="width: 50%;">
         <img src="images/estructura_html.jpg" alt="" srcset="" style="width: 70%;">
@@ -180,11 +94,14 @@ display:block;
     </p>
       </div>
     </article>
-
+    <hr>
     <section>
       <div style="padding: 1rem;">
-        <h2>MOCKUP</h2>
-        <img src="images/Mockups.png" alt="">
+        <div class="textCenter">
+          <h2>MOCKUP</h2>
+          <img src="images/Mockups.png" alt="">
+        </div>
+    
       </div>
     </section>
 
